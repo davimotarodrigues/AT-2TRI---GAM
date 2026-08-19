@@ -4,6 +4,7 @@ extends CanvasLayer
 
 @onready var score_label: Label = $MarginContainer/ScoreLabel
 
+var pontuacao: int = 0
 
 func _ready() -> void:
 	GameManager.score_changed.connect(_on_score_changed)
@@ -15,4 +16,5 @@ func _on_score_changed(new_score: int) -> void:
 
 
 func _update(value: int) -> void:
+	pontuacao += 1
 	score_label.text = "Cerejas: %d" % value
