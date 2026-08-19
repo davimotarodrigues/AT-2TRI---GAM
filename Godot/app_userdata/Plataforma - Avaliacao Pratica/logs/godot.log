@@ -15,15 +15,7 @@ ERROR: Node not found: "Arbusto" (relative to "/root/Level/Placa").
    at: get_node (scene/main/node.cpp:1975)
    GDScript backtrace (most recent call first):
        [0] @implicit_ready (res://scripts/placa.gd:9)
-ERROR: Removing a CollisionObject node during a physics callback is not allowed and will cause undesired behavior. Remove with call_deferred() instead.
-   at: _notification (scene/2d/physics/collision_object_2d.cpp:99)
+SCRIPT ERROR: Invalid assignment of property or key 'text' with value of type 'String' on a base object of type 'null instance'.
+   at: _on_body_entered (res://scripts/placa.gd:16)
    GDScript backtrace (most recent call first):
-       [0] _on_hitbox_body_entered (res://scripts/inimigo.gd:30)
-ERROR: Node not found: "Arbusto" (relative to "/root/Level/Placa").
-   at: get_node (scene/main/node.cpp:1975)
-   GDScript backtrace (most recent call first):
-       [0] @implicit_ready (res://scripts/placa.gd:9)
-ERROR: Node not found: "Arbusto" (relative to "/root/Level/Placa").
-   at: get_node (scene/main/node.cpp:1975)
-   GDScript backtrace (most recent call first):
-       [0] @implicit_ready (res://scripts/placa.gd:9)
+       [0] _on_body_entered (res://scripts/placa.gd:16)

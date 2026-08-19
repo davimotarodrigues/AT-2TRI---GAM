@@ -4,3 +4,6 @@ res://scenes/player.tscn
 res://scripts/hud.gd
 res://scripts/cereja.gd
 res://scenes/cereja.tscn
+res://scenes/inimigo.tscn
+res://scripts/placa.gd
+res://scenes/placa.tscn

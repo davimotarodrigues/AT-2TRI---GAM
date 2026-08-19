@@ -3,7 +3,7 @@ extends Area2D
 ## escrever uma mensagem de fase concluida na tela.
 
 
-var cerejas_na_fase = 5
+var cerejas_na_fase: int = 5
 
 
 @onready var texto: Label = $Arbusto
@@ -13,4 +13,4 @@ func _on_body_entered(body: Node2D) -> void:
 	if not body.is_in_group("player"):
 		return
 
-	texto.text = "Fase concluida! Ao todo eram " + cerejas_na_fase + " cerejas."
+	texto.text = "Fase concluida! Ao todo eram " + str(cerejas_na_fase) + "cerejas"
