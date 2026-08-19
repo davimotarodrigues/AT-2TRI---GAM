@@ -14,8 +14,8 @@ ERROR: Error opening file 'res://icon.svg'.
 ERROR: Node not found: "Arbusto" (relative to "/root/Level/Placa").
    at: get_node (scene/main/node.cpp:1975)
    GDScript backtrace (most recent call first):
-       [0] @implicit_ready (res://scripts/placa.gd:9)
+       [0] @implicit_ready (res://scripts/placa.gd:7)
 SCRIPT ERROR: Invalid assignment of property or key 'text' with value of type 'String' on a base object of type 'null instance'.
-   at: _on_body_entered (res://scripts/placa.gd:16)
+   at: _on_body_entered (res://scripts/placa.gd:12)
    GDScript backtrace (most recent call first):
-       [0] _on_body_entered (res://scripts/placa.gd:16)
+       [0] _on_body_entered (res://scripts/placa.gd:12)

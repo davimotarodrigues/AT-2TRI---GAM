@@ -7,3 +7,9 @@ res://scenes/cereja.tscn
 res://scenes/inimigo.tscn
 res://scripts/placa.gd
 res://scenes/placa.tscn
+res://scripts/player.gd
+res://scenes/power_up.tscn
+res://scripts/game_manager.gd
+res://scripts/power_up.gd
+res://scripts/power_upx.gd
+res://scenes/power_upx.tscn

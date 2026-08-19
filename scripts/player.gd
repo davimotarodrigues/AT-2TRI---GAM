@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 var SPEED: float = 200.0
 var JUMP_VELOCITY: float = -400.0
+var SUPER_JUMP_VELOCITY: float = -540.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -13,6 +14,10 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		
+	if Input.is_action_just_pressed("super_jump") and is_on_floor() and GameManager.power_up:
+		GameManager.pode_power_up = true
+		velocity.y = SUPER_JUMP_VELOCITY
 
 	var direction: float = Input.get_axis("move_left", "move_right")
 	var pode_andar: bool = animated_sprite.sprite_frames.has_animation("run")
